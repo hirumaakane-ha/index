@@ -1,10 +1,105 @@
+/* Global styling */
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     line-height: 1.5;
     padding: 0;
-    margin: 0;
+    margin: 10, 200, 10, 200;
     background-color:#515151;
     color: white
+}
 
+
+/* Behaviours for links */
+a:link{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header a:hover{
+    color: salmon;
+}
+
+a:visited{
+    color: mediumturquoise;
+}
+
+a:active{
+    color: royalblue;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header{
+    background:#35424a;
+    padding-top: 30px;
+    min-height:70px;
+    border-bottom:rosybrown 4px solid;
+    font-size:16px;
+}
+
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding{
+    float: left;
+}
+
+header #branding h1{
+    margin: 0px;
+}
+
+header nav{
+    float:right;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+header .highlight, header .current a{
+    color: orangered;
+}
+
+/* Showcase */
+#showcase{
+    min-height: 400px;
+    background: url(../img/showcase.jpg);
+    text-align: center;
+    color: #ffffff;
+    border-style: solid;
+}
+
+#showcase h1{
+    border-style: solid;
+    text-align: right;
+    padding: 1%;
+    border-width: 4px;
+    border-right-width: 12px;
+    background-color: #35424a;
+    opacity: 0.8;
+}
+
+#showcase .container h1{
+    width: 50%;
+    float: right;
+}
+
+#showcase .container .container{
+    float: right;
+    padding: none;
+    margin: 0;
 }
