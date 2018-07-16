@@ -33,8 +33,8 @@ nav .container {
     position: center;
     margin-top: 10px;
     margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 
@@ -121,10 +121,8 @@ header {
 
 /* overview */
 #overview {
-    margin: 0 10%;
-    margin-bottom: 100px;
-    padding-left: 200px;
-    padding-right: 200px;
+    margin: 0 7%;
+    margin-bottom: 10%;
 }
 
 /* navigator */
