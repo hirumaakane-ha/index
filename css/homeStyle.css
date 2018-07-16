@@ -1,16 +1,30 @@
 /* Global styling */
 body {
-    background-color: rgb(46, 0, 88);
+    background-color: rgb(24, 32, 41);
     color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
+    font-family: 'Oxygen Mono', monospace;
+    font-size: 15px;
     line-height: 1.5;
-    padding: 0;
-    margin: 0;
+    min-height: 100%;
+    padding-bottom: 6rem;
 }
 
 .highlight {
     color: rgb(0, 255, 106);
+}
+
+.title {
+    text-decoration: underline yellow solid;
+}
+
+#overview ul {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 17px;
+}
+
+#overview ul li {
+    margin-bottom: 10pt;
 }
 
 /* NAV BAR */
@@ -30,6 +44,7 @@ header a:link {
     text-decoration: none;
     text-transform: uppercase;
     color: white;
+    font-family: 'Oxygen Mono', monospace;
 }
 
 header a:visited {
@@ -47,6 +62,7 @@ header a:active {
 nav ul {
     list-style-type: none;
     font-size: 15px;
+    font-family: 'Oxygen Mono', monospace;
 }
 
 nav li {
@@ -103,3 +119,29 @@ header {
     background: lightseagreen;
 }
 
+/* overview */
+#overview {
+    margin: 0 10%;
+    margin-bottom: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+/* navigator */
+.navigation a{
+    color: white;
+    margin-left: 75%;
+    margin-right: auto;
+}
+
+/* footer */
+
+footer {
+        padding: 6rem;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #222222;
+        text-align: center;
+        margin-top: 100px;
+}
