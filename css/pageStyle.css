@@ -61,7 +61,10 @@ nav li {
 }
 
 nav {
+    padding-bottom: 2%;
     margin: 3%;
+    margin-bottom: 10%;
+    border-bottom: solid rgb(192, 0, 0) 1px;
 }
 
 #current {
@@ -70,8 +73,8 @@ nav {
 
 header {
     padding: 0px;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 15%;
+    margin-right: 15%;
     position: center;
     text-transform: uppercase;
     margin-bottom: 2%;
