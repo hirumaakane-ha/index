@@ -1,8 +1,8 @@
 /* Global styling */
 body {
-    background-color: rgb(24, 32, 41);
-    color: white;
-    font-family: 'Oxygen Mono', monospace;
+    background-color:white;
+    color:black;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 15px;
     line-height: 1.5;
     min-height: 100%;
@@ -10,11 +10,13 @@ body {
 }
 
 .highlight {
-    color: rgb(0, 255, 106);
+    color: rgb(255, 205, 68);
 }
 
 .title {
-    text-decoration: underline yellow solid;
+    text-decoration: underline;
+    text-decoration-color: rgb(158, 158, 0);
+    -webkit-text-decoration-color: rgb(163, 163, 0);
 }
 
 #overview ul {
@@ -25,6 +27,10 @@ body {
 
 #overview ul li {
     margin-bottom: 10pt;
+}
+
+h1 {
+    font-weight: lighter;
 }
 
 /* NAV BAR */
@@ -40,19 +46,23 @@ nav .container {
 
 /* header link */
 
+h1 .highlight {
+    color: rgb(192, 0, 106);
+}
+
 header a:link {
     text-decoration: none;
     text-transform: uppercase;
-    color: white;
+    color: black;
     font-family: 'Oxygen Mono', monospace;
 }
 
 header a:visited {
-    color: white;
+    color: black;
 }
 
 header a:hover {
-    color: rgb(164, 226, 255);
+    color: rgb(0, 136, 199);
 }
 
 header a:active {
@@ -71,14 +81,14 @@ nav li {
     display: inline;
     border-style: solid;
     border-width: 1px;
-    color: white;
+    color: black;
+    background: white;
 }
 
 nav {
     padding-bottom: 2%;
     margin: 3%;
-    margin-bottom: 10%;
-    border-bottom: solid rgb(192, 0, 0) 1px;
+    margin-bottom: 2%;
 }
 
 #current {
@@ -86,13 +96,15 @@ nav {
 }
 
 header {
-    padding: 0px;
-    margin-left: 15%;
-    margin-right: 15%;
+    background: rgb(255, 248, 248);
+    padding: 0px 15% 0 15%;
+    margin-left: 0;
+    margin-right: 0;
     position: center;
     text-transform: uppercase;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
     margin-top: 2%;
+    border-bottom: solid rgb(192, 0, 0) 1px;
 }
 
 /* Site banner */
@@ -104,37 +116,54 @@ header {
 }
 
 #banner .container{
-    background: grey;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
     margin: 3%;
     margin-left: 70%;
-    padding: 3% 3% 3% 0;
+    padding: 2% 1% 2% 0;
     text-align: right;
+    color: white;
 }
 
 /* newsletter */
 
 #newsletter .container{
-    padding: 15px;
+    padding: 15px 0px 15px 15px;
     margin-left: 70%;
-    margin-right: 3%;
+    margin-right: 0;
     margin-top: 1%;
     margin-bottom: 100px;
-    background: lightseagreen;
+    border: solid rgb(0, 195, 255) 1px;
+    color: grey;
 }
 
 /* overview */
 #overview {
     margin: 0 7%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
+    border-left: solid;
+    border-right: solid;
+    border-width: 1px;
+    border-color: rgb(90, 219, 191);
+    padding: 15px;
+}
+
+#overview h3 {
+    color: rgb(179, 0, 110);
 }
 
 /* navigator */
 .navigation a{
-    color: white;
-    margin-left: 75%;
+    color: rgb(0, 153, 255);
+    margin-left: 85%;
     margin-right: auto;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(0, 153, 255);
+    padding: 15px;
 }
-
 /* footer */
 
 footer {
@@ -142,7 +171,8 @@ footer {
         right: 0;
         bottom: 0;
         left: 0;
-        background-color: #222222;
+        background-color: #008ac0;
         text-align: center;
         margin-top: 100px;
+        color: rgb(255, 255, 255);
 }
