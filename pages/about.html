@@ -15,17 +15,28 @@
         <link rel="icon" type="image/ico" href="img/webicon.ico">
         <!--GOOGLE FONT IMPORT-->
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Oxygen+Mono" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Oxygen+Mono" rel="stylesheet">
+        <!-- Specific styling -->
+        <style>
+            .background {
+                background: url(https://s3.ca-central-1.amazonaws.com/hirumaakane.cdn/hoanganhramen.img/bg-about-3.jpg) no-repeat;
+                background-position: center;
+            }
+            #newsletter .container{
+                background: rgb(0, 195, 255);
+            }
+        </style> 
     </head>
 
     <body>
+    <div class="background">
         <header>
             <h1><span class="highlight">Hoang Anh Ramen</span> | Self-pity Sounds Like a Delicacy</h1>
             <nav>
                     <div class="container">
                     <ul>
                         <li><a href="../index.html">Home</a></li>
-                        <li><a href="posts/landing.html">Posts</a></li>
+                        <li><a href="../posts/landing.html">Posts</a></li>
                         <li id="current"><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
@@ -33,20 +44,27 @@
             </nav>
         </header>
 
-
         <!--SITE HEADING-->
         <section class="heading">
                 <div class="container">
-                    <h2>About the author</h2>           
+                    <h2>About the author</h2>
+                    <div class="image-cropper">
+                        <img src="https://s3.ca-central-1.amazonaws.com/hirumaakane.cdn/hoanganhramen.img/avatar.jpg">         
+                    </div>
+                    <p>Hoang Anh, Nguyen</p>
                 </div>
         </section>
 
         <!-- Information -->
         <section id="information">
             <div class="container">
-                <h3><span class="title">Preface:</span> Wasn't sure that I'd be going down this path</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae modi esse temporibus est, minus quisquam beatae illum maiores recusandae itaque labore dolor incidunt animi atque. Non ex aut omnis debitis.</p>
-                <img src="">
+                <ul>
+                    <li><span class="highlight">Aliases </span><span class="txtbg">* Akane (JP abbrev.), Fugunagi (most IGNs)</span></li>
+                    <li><span class="highlight">Born </span><span class="txtbg">1999 in SGN, VN.</span></li>
+                    <li><span class="highlight">E-mail </span><span class="txtbg">nguyenhoanganh.ted@yahoo.co.jp</span></li>
+                    <li><span class="highlight">Moved </span><span class="txtbg">my sloth self to Montreal, CA. for college/university.</span></li>
+                    <li><span class="highlight">Concentration </span><span class="txtbg">Science, ComSci.</span></li>
+                </ul>
             </div>
         </section>
 
@@ -65,6 +83,7 @@
     <footer>
         <p>Hoang Anh Ramen Site. All contents are copyrighted by Hoang Anh N. &copy; 2018</p>
         <p>Contents from third-parties are explicitly stated</p>
-    </footer>       
+    </footer>
+    </div>       
     </body>
 </html>

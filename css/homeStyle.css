@@ -97,6 +97,7 @@ nav {
 
 header {
     background: rgb(255, 248, 248);
+    background: linear-gradient(to top right, rgb(255, 248, 248), rgb(219, 247, 255));
     padding: 0px 15% 0 15%;
     margin-left: 0;
     margin-right: 0;
@@ -105,6 +106,7 @@ header {
     margin-bottom: 1%;
     margin-top: 2%;
     border-bottom: solid rgb(192, 0, 0) 1px;
+    padding-top: 1%;
 }
 
 /* Site banner */
@@ -136,6 +138,19 @@ header {
     margin-bottom: 100px;
     border: solid rgb(0, 195, 255) 1px;
     color: grey;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 
 /* overview */
