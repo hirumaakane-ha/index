@@ -25,20 +25,6 @@ body {
     padding-right: 2px;
 }
 
-#overview ul {
-    text-align: justify;
-    text-justify: inter-word;
-    font-size: 17px;
-}
-
-#overview ul li {
-    margin-bottom: 10pt;
-}
-
-h1 {
-    font-weight: lighter;
-}
-
 .image-cropper {
     width: 150px;
     height: 150px;
@@ -46,6 +32,10 @@ h1 {
     overflow: hidden;
     border-radius: 50%;
     margin-left: 2.5%;
+}
+
+h1 {
+    font-weight: lighter;
 }
 
 /* NAV BAR */
@@ -59,45 +49,18 @@ nav .container {
 }
 
 
-/* header link */
-
-h1 .highlight {
-    color: rgb(255, 255, 255);
-}
-
-header a:link {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: black;
-    font-family: 'Oxygen Mono', monospace;
-}
-
-header a:visited {
-    color: black;
-}
-
-header a:hover {
-    color: rgb(0, 136, 199);
-}
-
-header a:active {
-    color: rgb(243, 87, 87);
-}
-
 nav ul {
     list-style-type: none;
     font-size: 15px;
-    font-family: 'Oxygen Mono', monospace;
+    font-family: 'Roboto', sans-serif;
 }
 
 nav li {
     margin: 1%;
     padding: 1%;
     display: inline;
-    border-style: solid;
-    border-width: 1px;
-    color: black;
-    background: white;
+    color: rgb(255, 255, 255);
+    border-left: solid white 2px;
 }
 
 nav {
@@ -106,27 +69,59 @@ nav {
     margin-bottom: 2%;
 }
 
+/* overview */
+#overview ul {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 17px;
+}
+
+#overview ul li {
+    margin-bottom: 10pt;
+}
+
+/* header link */
+
+h1 .highlight {
+    color: #ff77a9;
+}
+
+header a:link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+}
+
+header a:visited {
+    color: rgb(255, 255, 255);
+}
+
+header a:hover {
+    color: #00ffdd;
+}
+
+header a:active {
+    color: rgb(243, 87, 87);
+}
+
 #current {
     color:rgb(255, 116, 116);
 }
 
 header {
-    background: rgb(255, 248, 248);
-    background: linear-gradient(to bottom right, #cb2d3e, #ef473a);
+    background: #009caa;
     padding: 0px 15% 0 15%;
     margin-left: 0;
     margin-right: 0;
     position: center;
     text-transform: uppercase;
-    margin-bottom: 1%;
-    margin-top: 2%;
-    border-bottom: solid rgb(192, 0, 0) 1px;
+    margin-bottom: 0;
+    margin-top: 0;
+    border-bottom: solid rgb(255, 255, 255) 1px;
     padding-top: 1%;
-}
-
-header h1 {
-    font-weight: normal;
-    color: rgb(255, 255, 255);
+    color: white;
+    border-top: solid #005662 30px;
 }
 
 /* Site banner */
@@ -230,7 +225,7 @@ header h1 {
     font-weight: lighter;
 }
 
-/* POSTS PAGE STYLING */
+/* POSTS LANDING PAGE STYLING */
 
 #catalogue {
     margin: 2% 25% 2% 15%;
@@ -262,6 +257,98 @@ header h1 {
 #catalogue h3 {
     font-weight: 300;
 }
+
+#catalogue a {
+    text-decoration: none;
+    color: black;
+}
+
+.date {
+    color: grey;
+}
+
+/* Posts styling */
+#post-self {
+    margin: 2% 15% 2% 15%;
+    font-size: 14pt;
+}
+
+#post-self .container #posts {
+    border-left: solid;
+    border-width: 1px;
+    border-color: rgb(250, 121, 143);
+}
+
+#post-self .container #posts a {
+    padding-left: 15px;
+}
+
+#post-self .container {
+    padding: 10px;
+}
+
+#post-self .highlight {
+    color: rgb(255, 255, 255);
+    font-size: 16pt;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#post-self ul {
+    list-style-type: circle;
+}
+
+#post-self h3 {
+    font-weight: 300;
+}
+
+#post-self a {
+    text-decoration: none;
+    color: black;
+}
+
+.date {
+    color: grey;
+}
+
+#post-self ul {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 19px;
+}
+
+#post-self ul li {
+    margin-bottom: 12pt;
+}
+
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: rgb(0, 153, 120);
+}
+
 
 /* navigator */
 .navigation a{
