@@ -83,7 +83,7 @@ nav {
 /* header link */
 
 h1 .highlight {
-    color: #ff77a9;
+    color: #ffcc6e;
 }
 
 header a:link {
@@ -147,8 +147,8 @@ header {
 
 #newsletter .container{
     padding: 15px 0px 15px 15px;
-    margin-left: 70%;
-    margin-right: 0;
+    margin-left: 75%;
+    margin-right: 5%;
     margin-top: 1%;
     margin-bottom: 100px;
     border: solid rgb(0, 195, 255) 1px;
@@ -193,14 +193,14 @@ header {
     color: #000000;
     text-transform: uppercase;
     font-size: 24pt;
-    border-bottom: 2px solid yellow;
+    border-bottom: 2px solid #b4004e;
     margin: 0 35%;
 }
 
 /* information */
 
 #information {
-    margin: 2% 45% 2% 15%;
+    margin: 2% 55% 2% 15%;
     font-size: 14pt;
     border-left: solid;
     border-right: solid;
@@ -265,6 +265,16 @@ header {
 
 .date {
     color: grey;
+}
+
+/* Contact */
+#contactInfo {
+    margin: 12pt 25%;
+    font-size: 18pt;
+}
+
+#contactInfo .highlight {
+    color: #009caa;
 }
 
 /* Posts styling */
@@ -352,13 +362,13 @@ header {
 
 /* navigator */
 .navigation a{
-    color: rgb(0, 153, 255);
+    color: #b4004e;
     margin-left: 85%;
     margin-right: auto;
     text-decoration: none;
     border-style: solid;
     border-width: 1px;
-    border-color: rgb(0, 153, 255);
+    border-color: #b4004e;
     padding: 15px;
 }
 
