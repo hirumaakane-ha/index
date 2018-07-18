@@ -9,5 +9,5 @@ if (screen.width >= 1366) {
 if (screen.width >= 1280) {
     document.write("<style>body {transform: scale(8.0)}</style>");
 } else {
-    document.write("<style>body {transform: scale(8.0)}</style>")
+    document.write("<style>body {transform: scale(4.0)}</style>")
 }
