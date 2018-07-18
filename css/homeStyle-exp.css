@@ -1,0 +1,156 @@
+/* Global styling */
+body {
+    background-color:rgb(53, 53, 53);
+    color:rgb(255, 255, 255);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    min-height: 100%;
+    padding-bottom: 6rem;
+}
+
+.image-cropper {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: 2.5%;
+}
+
+/* Framework */
+.framework {
+    margin: 2.5% 7.5%;
+    background: rgb(32, 32, 32);
+    padding: 2.5% 5%;
+}
+
+/* Home */
+
+#home h1 {
+    font-family: 'Comfortaa', cursive;
+    display: block;
+}
+
+#home {
+    border-left: solid rgb(0, 153, 120) 1px;
+    padding-left: 2%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+/* Preface */
+
+#preface h2 {
+    border-bottom: solid rgb(0, 153, 120) 2px; 
+}
+
+#preface ul {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 19px;
+    color: rgb(207, 207, 207);
+}
+
+#preface p {
+    text-align:right;
+}
+
+/* header */
+.header {
+    margin: 1% 7.5%;
+    background: rgb(32, 32, 32);
+    padding: 1% 5%;
+}
+
+.header h1 {
+    font-family: 'Libre Barcode 128 Text', cursive;
+    font-weight: lighter;
+    font-size: 32pt;
+    color: rgb(233, 250, 0);
+    display: block;
+}
+
+.header .highlight {
+    color: white;
+}
+
+.header #txt {
+    font-weight: lighter;
+    font-size: 50pt;
+    display: block;
+    position: absolute;
+    left: 70%;
+    top: 5%;
+
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 64px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: rgb(0, 153, 120);
+}
+
+.sidenav {
+    font-family: 'Comfortaa', cursive;
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 320px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 6%;
+}
+/* Button */
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* navigator */
+#navigator p {
+    padding: 10px;
+    border: solid salmon 1px;
+    margin: 10pt 0 10pt 92.5%;
+    text-align: center;
+}
+
+#navigator a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+/* footer */
+
+footer {
+    padding: 1rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(57, 0, 95);
+    text-align: center;
+    margin: 100px 7.5% 0 7.5%;
+    color: rgb(255, 255, 255);
+}
