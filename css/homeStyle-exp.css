@@ -87,7 +87,7 @@ body {
 
 /* The navigation menu links */
 .sidenav a {
-    padding: 6px 8px 6px 64px;
+    padding: 12px 8px 6px 64px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
@@ -100,6 +100,7 @@ body {
 
 .sidenav {
     font-family: 'Comfortaa', cursive;
+    font-weight: 14pt;
     height: 100%; /* Full-height: remove this if you want "auto" height */
     width: 320px; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
@@ -108,9 +109,9 @@ body {
     left: 0;
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 10%;
-    margin-top: 12%;
+    margin-top: 10%;
     margin-bottom: 10%;
-    margin-left: 3.75%;
+    margin-left: 5%;
 }
 /* Button */
 
