@@ -3,11 +3,11 @@ if (screen.width >= 1920) {
 }
 
 if (screen.width >= 1366) {
-    document.write("<style>body {transform: scale(9.0)}</style>");
+    document.write("<style>body {transform: scale(.9)}</style>");
 }
 
 if (screen.width >= 1280) {
-    document.write("<style>body {transform: scale(8.0)}</style>");
+    document.write("<style>body {transform: scale(.8)}</style>");
 } else {
-    document.write("<style>body {transform: scale(4.0)}</style>")
+    document.write("<style>body {transform: scale(.8)}</style>")
 }
