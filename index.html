@@ -18,67 +18,72 @@
         <meta property="og:image:width" content="200">
         <meta property="og:image:height" content="200">
         <meta property="og:image" content="https://s3.ca-central-1.amazonaws.com/hirumaakane.cdn/hoanganhramen.img/logo.jpg">
+        <!-- Scripting -->
         <link rel="stylesheet" href="css/homeStyle.css">
         <link rel="icon" type="image/ico" href="https://s3.ca-central-1.amazonaws.com/hirumaakane.cdn/hoanganhramen.img/webicon.ico">
+        <script src="css/scripts.js"></script>
         <!--GOOGLE FONT IMPORT-->
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Oxygen+Mono" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa|Libre+Barcode+128+Text" rel="stylesheet">
+
+        <!-- STYLING -->
+
+        <!-- Scripting -->
+        <script>
+            function startTime() {
+                var today = new Date();
+                var h = today.getHours();
+                var m = today.getMinutes();
+                var s = today.getSeconds();
+                m = checkTime(m);
+                s = checkTime(s);
+                document.getElementById('txt').innerHTML = "| " +
+                h + " : " + m + " : " + s;
+                var t = setTimeout(startTime, 500);
+            }
+            function checkTime(i) {
+                if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+                return i;
+            }
+        </script>
     </head>
 
-    <body>
-        <header>
-            <h1><span class="highlight">Hoang Anh Ramen </span> | Self-pity Sounds Like a Delicacy</h1>
-            <nav>
-                    <div class="container">
-                    <ul>
-                        <li id="current"><a href="index.html">Home</a></li>
-                        <li><a href="posts/landing.html">Posts</a></li>
-                        <li><a href="pages/about.html">About</a></li>
-                        <li><a href="pages/contact.html">Contact</a></li>                  
-                    </ul>
-                    </div>
-            </nav>
-        </header>
-
-
-        <!--SITE BANNER-->
-        <section id="banner">
-                <div class="container">
-                    <h2>My Hideous Programming Journey</h2>
-                    <p class="highlight">my ideas and opinions are definitely hard to swallow</p>
+    <body onload="startTime()">
+        <div class="header">
+            <h1><span class="highlight">Hoang Anh Ramen</span> | Self-pity = Delicacy</h1>
+            <div id="txt"></div>
+        </div>
+        <div class="sidenav">
+            <a href="index.html">Home</a>
+            <a href="pages/about.html">About</a>
+            <a href="posts/landing.html">Posts</a>
+            <a href="pages/contact.html">Contact</a>
+        </div>
+        <div class="framework">
+            <section id="home">
+                <section id="banner">        
+                </section>
+                <div>
+                    <h1>Welcome to my blog</h1>
                 </div>
-        </section>
-
-        <!--NEWSLETTER-->
-        <section id="newsletter">
-            <div class="container">
-                <h1>Stay up-to-date with my noob cult</h1>
-                <form>
-                    <input type="email" placeholder="Your noob email here...">
-                    <button type="submit" class="button1">Subscribe</button>
-                </form>
-            </div>
-        </section>
-
-        <section id="overview">
-            <div class="container">
-                <h3><span class="title">Preface:</span> Wasn't sure that I'd be going down this path</h3>
-                <ul>
-                    <li>I have always been interested in technology ever since I was a kid. My childhood was filled with creativity and the freedom to explore the world around me. My childhood dream was to join the ranks of those who developed those incredible digital machineries. My primary years unfolded after my eyes as a disastrous period. The schooling system tried to mold myself into the image of an obedient pupil who obeys. During one encounter in 3rd grade, I just stopped trying to innovate.</li>
-                    <li>My secondary years were not as bad, as I found new friends who had kindled the creative minds like I did. We formed a hanging out group. We won some competitions. Some animosities were directed towards me, for no reasons. My group stayed on my side and helped me through the ordeal. We went our separate ways after going to high school.</li>
-                    <li>In high school, I made some new ones and formed a lasting relationship, including one of childhood friends. We still keep in touch till today. I began to gravitate towards politics and diplomacy because I joined a volunteering organization and my scores on science-y subjects didn’t convince me to chase after my dream while my friends started gravitating towards computer science and engineering.</li>
-                    <li>(Current) Cegep – A post-secondary institution in Quebec. I studied Psychology and Political Science. Got tired of the stupid number of essays and stupid number of extra courses that I had to take and also of the ridiculous office politics in the organization that resulted in me being booted. I changed my program to Pure/Applied Science. I am now facing my old enemies: Bio and Chem. Still, the program haunts me. I have to re-learn everything in high school. Bored. I started programming and coding. I feel good. I continue to do so, developing my own blog and learning programming. Can’t wait to get to university. As for my group, most of them are in ComSci, others are in other engineering fields and we still communicate.</li>
-                </ul>
-                <img src="">
-            </div>
-        </section>
-        
-        <section class="navigation">
-            <div class="container">
-                <h3 class="highlight"><a href="posts/landing.html">Start Here</a></h3>
-            </div>
-        </section>
+                <div id="preface">
+                    <h2>Preface:</h2>
+                    <ul>
+                        <li>I have always been interested in technology ever since I was a kid. My childhood was filled with creativity and the freedom to explore the world around me. My childhood dream was to join the ranks of those who developed those incredible digital machineries. My primary years unfolded after my eyes as a disastrous period. The schooling system tried to mold myself into the image of an obedient pupil who obeys. During one encounter in 3rd grade, I just stopped trying to innovate.</li>
+                        <li>My secondary years were not as bad, as I found new friends who had kindled the creative minds like I did. We formed a hanging out group. We won some competitions. Some animosities were directed towards me, for no reasons. My group stayed on my side and helped me through the ordeal. We went our separate ways after going to high school.</li>
+                        <li>In high school, I made some new ones and formed a lasting relationship, including one of childhood friends. We still keep in touch till today. I began to gravitate towards politics and diplomacy because I joined a volunteering organization and my scores on science-y subjects didn’t convince me to chase after my dream while my friends started gravitating towards computer science and engineering.</li>
+                        <li>(Current) Cegep – A post-secondary institution in Quebec. I studied Psychology and Political Science. Got tired of the stupid number of essays and stupid number of extra courses that I had to take and also of the ridiculous office politics in the organization that resulted in me being booted. I changed my program to Pure/Applied Science. I am now facing my old enemies: Bio and Chem. Still, the program haunts me. I have to re-learn everything in high school. Bored. I started programming and coding. I feel good. I continue to do so, developing my own blog and learning programming. Can’t wait to get to university. As for my group, most of them are in ComSci, others are in other engineering fields and we still communicate.</li>
+                    </ul>
+                    <p>- Nguyen Hoang Anh</p>
+                </div>
+            </section>
+            <section id="navigator">
+                <p><a href='posts/landing.html'>Start Here</a></p>
+                <p><a href='pages/about.html'>Learn more</a></p>
+            </section>
+        </div>
     </body>
 
     <!--FOOTER-->

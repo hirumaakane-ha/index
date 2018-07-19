@@ -6,91 +6,88 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>HARamen | Welcome</title>
-        <meta name="description" content="Where Lamentation Feels Like a Delicacy">
+        <title>HARamen | Night 1</title>
+        <meta name="description" content="Where Self-pity Feels Like a Delicacy">
         <meta name="author" content="Nguyen Hoang Anh">
         <meta name="developer" content="Nguyen Hoang Anh">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--Facebook props-->
         <meta property="og:title" content="Hoang Anh Ramen">
         <meta property="og:description" content="Where Self-pity Feels Like a Delicacy">
-        <meta property="og:image" content="https://s3.ca-central-1.amazonaws.com/hirumaakane.cdn/hoanganhramen.img/logo.jpg">
         <meta property="og:image:type" content="image/jpeg">
         <meta property="og:image:width" content="200">
         <meta property="og:image:height" content="200">
+        <meta property="og:image" content="https://s3.ca-central-1.amazonaws.com/hirumaakane.cdn/hoanganhramen.img/logo.jpg">
+        <!-- External scripts and CSS -->
         <link rel="stylesheet" href="../css/pageStyle.css">
         <link rel="icon" type="image/ico" href="https://s3.ca-central-1.amazonaws.com/hirumaakane.cdn/hoanganhramen.img/webicon.ico">
+        <script src="../css/scripts.js"></script>
         <!--GOOGLE FONT IMPORT-->
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Oxygen+Mono" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oxygen+Mono" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-        <!-- Specific Styling -->
-        <style>
-            #newsletter h1{
-                color: black;
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa|Libre+Barcode+128+Text" rel="stylesheet">
+
+        <!-- STYLING -->
+
+        <!-- Scripting -->
+        <script>
+            function startTime() {
+                var today = new Date();
+                var h = today.getHours();
+                var m = today.getMinutes();
+                var s = today.getSeconds();
+                m = checkTime(m);
+                s = checkTime(s);
+                document.getElementById('txt').innerHTML = "| " +
+                h + " : " + m + " : " + s;
+                var t = setTimeout(startTime, 500);
             }
-        </style> 
+            function checkTime(i) {
+                if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+                return i;
+            }
+        </script>
     </head>
 
-    <body>
-        <div class="sidenav">
-            <span class="highlight"><a href="/setting-up-a-web-server.html">Night 1</span></a>
-            <a href="#">Night 2</a>
-            <a href="#">Night 3</a>
-            <a href="#">Night 4</a>
+    <body onload="startTime()">
+        <div class="header">
+            <h1><span class="highlight">Hoang Anh Ramen</span> | Self-pity = Delicacy</h1>
+            <div id="txt"></div>
         </div>
-        <header>
-            <h1><span class="highlight">Hoang Anh Ramen</span> | Self-pity Sounds Like a Delicacy</h1>
-            <nav>
-                    <div class="container">
-                    <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li a="highlight"><a href="landing.html">Posts</a></li>
-                        <li><a href="../pages/about.html">About</a></li>
-                        <li><a href="../pages/contact.html">Contact</a></li>
-                    </ul>
-                    </div>
-            </nav>
-        </header>
-
-
-        <!--SITE HEADING-->
-        <section class="heading">
-                <div class="container">
-                    <h2>Setting Up A Web Server</h2>           
+        <div class="sidenav">
+            <a href="../index.html">Home</a>
+            <a style="margin: 0 50% 1% 0; border-bottom: solid rgb(0, 153, 120) 2px;" href="landing.html">Posts</a>
+            <a href="night-1.html">Night 1</a>
+            <a href="night-2.html">Night 2</a>
+            <a href="night-3.html">Night 3</a>
+        </div>
+        <div class="framework">
+            <section id="post-self">
+                <div class="header">
+                    <h3>Night 1 - Sun, Jul 8th, '18</h3>
                 </div>
-        </section>
-
-        <!-- post-self -->
-        <section id="post-self">
-            <div class="container">
-                <div id="posts">
-                    <a href="setting-up-a-web-server.html"><span class="date">Night 1 - Sun, Jul 8th, ‘18</span></a>
+                <div id="post">
+                    <h1>Setting up a web server</h1>
                     <ul>
                         <li>It has been a long time since I last created a server on Amazon EC2. The reason made me give up on teaching myself how to develop a website from scratch was because I did not have enough time or a long enough period of time to invest in sitting in front of the computer screen due to having (a lot of) school work. Now it is summer, and I literally have all the time in the world, aside looking for jobs and interacting with fellow homo sapiens, to glue my posterior to the chair and start learning, setting up and developing my very own website.</li>
                         <li>12:30AM, after failing to write an RPG, I decided to do something else, something that does not necessary require formal training in the craft. Some neurons just sparked in my head that I wanted to create and host a web server. Then, I remembered that I actually had set some super-barebone servers during the Winter semester. So, fueled by my youthful exuberance and some Monster that I mistakenly bottom-up-ed that night without thinking about the consequences, I dived headfirst into creating a web server.</li>
                         <li>I went back to the first-things-first: creating a brand new EC2 instance hosted by Jeff to be my web server and deleting the incomplete remnants of my tinkering Winter. I used free tier (ofc, I’m not rich) and opted for the Ubuntu 16.04 LTS offered by Jeff. Now came a tad trickier part, which is creating and ssh-ing with a .PEM key from my local computer. It wasn’t hard to find a YouTube video showing exactly how to do it. For me, I followed the one by Inertia7.</li>
-                        <li>Then, I just passed out on the bed due to extreme exhaustion and by the fact that I had to wake up earlier than usual (usual = 1-2PM) to have lunch with extended family here.</li>
+                        <li>Then, I just passed out on the bed due to extreme exhaustion and by the fact that I had to wake up earlier than usual (usual = 1 - 2PM) to have sushi (gosh I hate how people refer to a Japanese meal as 'go eat sushi') lunch with my extended family here.</li>
                     </ul>
+                    <img src="https://s3.ca-central-1.amazonaws.com/hirumaakane.cdn/hoanganhramen.img/night-1.png">
                 </div>
-            </div>
-        </section>
+            </section>
+            <section id="navigator">
+                <p><a href='landing.html'>Return</a></p>
+                <p><a href='../pages/about.html'>Learn more</a></p>
+            </section>
+        </div>
+    </body>
 
-         <!--NEWSLETTER-->
-         <section id="newsletter">
-            <div class="container">
-                <h1>Stay up-to-date with my noob cult</h1>
-                <form>
-                    <input type="email" placeholder="Your noob email here...">
-                    <button type="submit" class="button1">Subscribe</button>
-                </form>
-            </div>
-        </section>
-
-        <!--FOOTER-->
+    <!--FOOTER-->
     <footer>
         <p>Hoang Anh Ramen Site. All contents are copyrighted by Hoang Anh N. &copy; 2018</p>
         <p>Contents from third-parties are explicitly stated</p>
-    </footer>       
-    </body>
+    </footer>
 </html>

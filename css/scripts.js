@@ -1,4 +1,4 @@
-if (screen.width >= 1920) {
+/* if (screen.width >= 1920) {
     document.write("<style>body {transform: scale(1.0)}</style>");
 }
 
