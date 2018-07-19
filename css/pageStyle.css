@@ -181,6 +181,11 @@ body {
     color: grey;
 }
 
+#posts li {
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+
 /* The navigation menu links */
 .sidenav a {
     padding: 12px 12px 6px 64px;
