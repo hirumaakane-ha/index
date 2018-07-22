@@ -22,10 +22,83 @@
     <link href="https://fonts.googleapis.com/css?family=Oxygen+Mono" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa|Libre+Barcode+128+Text" rel="stylesheet">
+    <!--- Specific Styling -->
+    <style>
+        body {
+            background: rgb(37, 37, 37); 
+            color: white;
+        }
+        .jumbotron {
+            color: rgb(255, 255, 255);
+            background: black;
+            font-family: 'Libre Barcode 128 Text', sans-serif;
+            font-weight: 200;
+            border-bottom: solid rgb(0, 255, 170) 1px;
+        }
+        .list-group {
+            margin-bottom: 10%;
+            padding-left: 24pt;
+        }
+        .highlight {
+            color: rgb(0,255,170);
+        }
+        #nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: #008fa1;
+        }
+
+        #nav li a {
+            display: block;
+            color: rgb(255, 255, 255);
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        /* Change the link color on hover */
+        #nav li a:hover {
+            background-color: rgb(255, 187, 0);
+            color: white;
+        }
+        .framework {
+            margin: 10%, 25%;
+            padding: 5%;
+            background: black;
+            border: solid rgb(255, 187, 0) 1px;
+        }
+
+    </style>
 </head>
 <body>
-    <div class="jumbotron">
-        <h1>Hoang Anh Ramen | Self-pity = Delicacy</h1>
+    <div class="container">
+        <div class="jumbotron">
+            <h1><span class="highlight">Hoang Anh Ramen</span> | Self-pity = Delicacy</h1>
+        </div>
+    <div class="framework">
+    <div class="row">
+        <div class="container">
+            <h2>Oops... Your request cannot be fulfilled :(</h2>
+            <p>The reasons can be one of the following...</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <ul class="list-group">
+                <li>The page is under construction</li>
+                <li>The page does not exist</li>
+                <li>Your address has an error somewhere</li>
+            </ul>
+        </div>     
+    </div>
+    <div id="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="posts/landing.html">Posts</a></li>
+            <li><a href="pages/about.html">About</a></li>
+            <li><a href="pages/contact.html">Conact</a></li>
+        </ul>
+    </div> 
+    </div>
     </div>
 
 
