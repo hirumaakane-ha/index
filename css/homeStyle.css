@@ -47,6 +47,20 @@ body {
     margin-bottom: 5%;
 }
 
+/* update */
+
+#update {
+    margin-top: 100pt;
+    margin-bottom: 100pt;
+}
+
+#update ul {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 19px;
+    color: rgb(207, 207, 207);
+}
+
 /* Preface */
 
 #preface h2 {
