@@ -6,83 +6,103 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>HARamen | Welcome</title>
-        <meta name="description" content="Where Lamentation Feels Like a Delicacy">
+        <title>HARamen | About</title>
+        <meta name="description" content="Where Self-pity Feels Like a Delicacy">
         <meta name="author" content="Nguyen Hoang Anh">
         <meta name="developer" content="Nguyen Hoang Anh">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--Facebook props-->
         <meta property="og:title" content="Hoang Anh Ramen">
         <meta property="og:description" content="Where Self-pity Feels Like a Delicacy">
-        <meta property="og:image" content="https://s3.ca-central-1.amazonaws.com/hirumaakane.cdn/hoanganhramen.img/logo.jpg">
         <meta property="og:image:type" content="image/jpeg">
         <meta property="og:image:width" content="200">
         <meta property="og:image:height" content="200">
+        <meta property="og:image" content="https://s3.ca-central-1.amazonaws.com/hirumaakane.cdn/hoanganhramen.img/facebook-scrape-img-1.png">
+        <!-- External scripts and CSS -->
         <link rel="stylesheet" href="../css/pageStyle.css">
         <link rel="icon" type="image/ico" href="https://s3.ca-central-1.amazonaws.com/hirumaakane.cdn/hoanganhramen.img/webicon.ico">
+        <script src="../css/scripts.js"></script>
         <!--GOOGLE FONT IMPORT-->
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Oxygen+Mono" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa|Libre+Barcode+128+Text" rel="stylesheet">
 
+        <!-- STYLING -->
         <style>
-            #newsletter h1{
-                color: black;
+            #information a {
+                text-decoration: none;
+                color: white;
+            }
+            #information a:hover {
+                color: rgb(255, 119, 56);
+            }
+            h4 {
+                font-size: 16pt;
+                border-bottom: solid grey 1px;
+                padding-left: 5pt;
+                padding-bottom: 5pt;
             }
         </style>
+        <!-- Scripting -->
+        <script>
+            function startTime() {
+                var today = new Date();
+                var h = today.getHours();
+                var m = today.getMinutes();
+                var s = today.getSeconds();
+                m = checkTime(m);
+                s = checkTime(s);
+                document.getElementById('txt').innerHTML = "| " +
+                h + " : " + m + " : " + s;
+                var t = setTimeout(startTime, 500);
+            }
+            function checkTime(i) {
+                if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+                return i;
+            }
+        </script>
     </head>
 
-    <body>
-        <header>
-            <h1><span class="highlight">Hoang Anh Ramen</span> | Self-pity Sounds Like a Delicacy</h1>
-            <nav>
-                    <div class="container">
-                    <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../posts/landing.html">Posts</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li id="current"><a href="contact.html">Contact</a></li>
-                    </ul>
-                    </div>
-            </nav>
-        </header>
-
-
-        <!--SITE HEADING-->
-        <section class="heading">
-                <div class="container">
-                    <h2>Contact me...</h2>           
+    <body onload="startTime()">
+        <div class="header">
+            <h1><span class="highlight">Hoang Anh Ramen</span> | Self-pity = Delicacy</h1>
+            <div id="txt"></div>
+        </div>
+        <div class="sidenav">
+            <a href="../index.html">Home</a>
+            <a href="#">About</a>
+            <a href="../posts/landing.html">Posts</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="framework">
+            <section id="home">
+                <div class="title">
+                    <h3>Contact</h3>
                 </div>
-        </section>
+                <div id="information">
+                    <p style="text-align: center; color: rgb(220, 107, 255); font-family: Helvetica; font-weight: lighter;">Nguyen Hoang Anh</p>
+                    <ul>
+                        <h4>Official Channel:</h4>
+                        <li><span id="highlight">E-mail: </span><a href="mailto:nguyenhoanganh.ted@yahoo.co.jp">nguyenhoanganh.ted@yahoo.co.jp</a></li>
+                        <h4>Social Media: </h4>
+                        <li><span style="color: rgb(0, 204, 255);">Facebook: </span><a href="https://facebook.com/iamNguyenHoangAnh">Nogamioka Hanaori Akane</a></li>
+                        <li><span style="color: pink">IG: </span><a href="https://www.instagram.com/commitpush.ha/">commitpush.ha</a></li>
+                        <h4>Coding related: </h4>
+                        <li><span style="color: rgb(206, 206, 206)">Github: </span><a href="https://github.com/hirumaakane-ha">Hiruma Akane</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section id="navigator">
+                <p><a href='posts/landing.html'>Start Here</a></p>
+                <p><a href='pages/about.html'>Learn more</a></p>
+            </section>
+        </div>
+    </body>
 
-        <!-- Contact -->
-        <section id="contactInfo">
-            <div class="container">
-                <ul>
-                    <li><span class="highlight">E-mail:</span> nguyenhoanganh.ted@yahoo.co.jp</li>
-                    <li><span class="highlight">Facebook:</span> /iamNguyenHoangAnh</li>
-                    <li><span class="highlight">Github:</span> github.com/hirumaakane-ha</li>
-                    <li><span class="highlight">Steam:</span> /fugunagi</li>
-                    <li><span class="highlight">League:</span> Fugunagi</li>
-                </ul>
-            </div>
-        </section>
-
-        <!--NEWSLETTER-->
-        <section id="newsletter">
-            <div class="container">
-                <h1>Stay up-to-date with my noob cult</h1>
-                <form>
-                    <input type="email" placeholder="Your noob email here...">
-                    <button type="submit" class="button1">Subscribe</button>
-                </form>
-            </div>
-        </section>
-
-        <!--FOOTER-->
+    <!--FOOTER-->
     <footer>
         <p>Hoang Anh Ramen Site. All contents are copyrighted by Hoang Anh N. &copy; 2018</p>
         <p>Contents from third-parties are explicitly stated</p>
-    </footer>       
-    </body>
+    </footer>
 </html>
