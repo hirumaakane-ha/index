@@ -1,0 +1,5 @@
+/* Exclusive for bootstrap customization */
+
+.container {
+    background: grey;
+}
