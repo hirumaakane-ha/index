@@ -50,8 +50,8 @@ body {
 /* update */
 
 #update {
-    margin-top: 100pt;
-    margin-bottom: 100pt;
+    margin-top: 75pt;
+    margin-bottom: 75pt;
 }
 
 #update ul {
@@ -59,6 +59,10 @@ body {
     text-justify: inter-word;
     font-size: 19px;
     color: rgb(207, 207, 207);
+}
+
+#update li {
+    margin: 10pt;
 }
 
 /* Preface */
