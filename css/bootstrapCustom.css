@@ -85,6 +85,24 @@ a {
     color: salmon;
 }
 
+#navigation-mobile li {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 12pt;
+    text-align: center;
+    border: solid 1px white;
+    margin: 4pt;
+}
+
+#navigation-mobile a {
+    color: white;
+}
+
+#navigation-mobile a:hover {
+    text-decoration: none;
+    color: salmon;
+}
+
 /* IMG */
 
 img {
