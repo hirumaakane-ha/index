@@ -61,9 +61,10 @@ a {
 
 #navigation {
     position: fixed;
-    max-width: 15%;
-    min-width: 50pt;
+    width: 15%;
+    min-width: 75pt;
     padding: 15pt;
+    padding-left: 0;
 }
 
 #navigation li {
