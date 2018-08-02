@@ -62,7 +62,8 @@ a {
 #navigation {
     position: fixed;
     max-width: 15%;
-    padding: 1%;
+    min-width: 50pt;
+    padding: 15pt;
 }
 
 #navigation li {
@@ -119,11 +120,9 @@ img {
 
 #txt {
     font-weight: lighter;
-    font-size: 50pt;
-    display: block;
-    position: absolute;
-    left: 60%;
-    top: 20pt;
+    font-size: 35pt;
+    display: inline;
+    text-align: right;
 }
 
 /* FOOTER */
