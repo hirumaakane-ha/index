@@ -1,5 +1,66 @@
 /* Exclusive for bootstrap customization */
 
+/* BODY */
+
+body {
+    color: white;
+    background: rgb(46, 46, 46);
+}
+
+/* CONTAINER */
+
 .container {
-    background: grey;
+    margin-top: 1%;
+    padding: 3%;
+    background: rgb(18, 0, 27);
+    color: white;
+}
+
+.container-fluid {
+    margin-top: 2.5%;
+}
+
+/* HEADING FORMATS */
+
+h1 {
+    font-family: 'Libre Barcode 128 Text', cursive;
+}
+
+h2 {
+    font-weight: 300;
+}
+
+h3 {
+    font-weight: 400;
+    letter-spacing: 1.5pt;
+    text-align: right;
+}
+
+/* HIGHLIGHTS */
+
+.highlight_gold {
+    color: gold;
+}
+
+.highlight_green {
+    color: rgb(0, 146, 102);
+}
+
+/* CLOCK */
+
+#txt {
+    font-weight: lighter;
+    font-size: 50pt;
+    display: block;
+    position: absolute;
+    left: 60%;
+    top: 20pt;
+}
+
+/* FOOTER */
+
+#footer {
+    background-color: rgb(40, 0, 56);
+    text-align: center;
+    color: rgb(255, 255, 255);
 }
