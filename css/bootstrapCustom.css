@@ -20,6 +20,12 @@ body {
     margin-top: 2.5%;
 }
 
+/* NAVBAR */
+
+.bg-color {
+    background: rgb(18, 0, 27);
+}
+
 /* HEADING FORMATS */
 
 h1 {
@@ -44,6 +50,19 @@ h3 {
 
 .highlight_green {
     color: rgb(0, 146, 102);
+}
+
+/* LINKS */
+
+a {
+    text-decoration: none;
+}
+
+/* LISTS */
+
+.collapse.navbar-collapse .container ul li {
+    display: inline;
+    padding: 0 12pt 0 12pt;
 }
 
 /* CLOCK */
