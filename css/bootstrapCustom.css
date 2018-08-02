@@ -12,7 +12,7 @@ body {
 .container {
     margin-top: 1%;
     padding: 3%;
-    background: rgb(18, 0, 27);
+    background: rgb(4, 7, 12);
     color: white;
 }
 
@@ -23,7 +23,7 @@ body {
 /* NAVBAR */
 
 .bg-color {
-    background: rgb(18, 0, 27);
+    background: rgb(0, 9, 14);
 }
 
 /* HEADING FORMATS */
@@ -57,13 +57,52 @@ h3 {
 a {
     text-decoration: none;
 }
+/* Navigation */
+
+#navigation {
+    position: fixed;
+    max-width: 15%;
+    padding: 1%;
+}
+
+#navigation li {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 12pt;
+    text-align: center;
+    border: solid 1px white;
+    margin: 4pt;
+}
+
+#navigation a {
+    color: white;
+}
+
+#navigation a:hover {
+    text-decoration: none;
+    color: salmon;
+}
 
 /* LISTS */
 
-.collapse.navbar-collapse .container ul li {
-    display: inline;
-    padding: 0 12pt 0 12pt;
+.container .container li {
+    text-align: justify;
+    font-size: 19pt;
+    margin-top: 10pt;
+    line-height: 25pt;
+    color: rgb(175, 169, 155);
+    font-weight: 300;
 }
+
+.container .container p {
+    text-align: right;
+    font-size: 19pt;
+    margin-top: 10pt;
+    line-height: 25pt;
+    color: rgb(240, 240, 240);
+    font-weight: 300;
+}
+
 
 /* CLOCK */
 
@@ -79,7 +118,7 @@ a {
 /* FOOTER */
 
 #footer {
-    background-color: rgb(40, 0, 56);
+    background-color: rgb(5, 9, 24);
     text-align: center;
     color: rgb(255, 255, 255);
 }
