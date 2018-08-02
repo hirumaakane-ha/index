@@ -48,7 +48,7 @@
                 return i;
             }
             
-            /* function detectDevice() {
+            function detectDevice() {
                 if (window.innderWidth <= 800 || window.innerHeight <= 600) {
                     return true;
                 }
@@ -56,20 +56,18 @@
                     return false;
                 }
             }
-            
-            function redirect(detectDevice) {
-                if (detectDevice == true) {
 
-                }
+            function Redirect() {
+               window.location="https://hoanganhramen.xyz/posts/mobile/night-4.html";
             }
-            */
 
         </script>
     </head>
-    <body onload="startTime()">
+    <body onload="startTime()" onload="detectDevice()">
         <script>
-            if($(window).width() < 1000){
-                window.location = "https://hoanganhramen.xyz/posts/mobile/night-4.html"
+            device_query = detectDevice();
+            if (device_query == true) {
+                Redirect();
             }
         </script>
         <div class="container">
