@@ -83,6 +83,17 @@ a {
     color: salmon;
 }
 
+/* IMG */
+
+img {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 75%;
+    margin-left: 2.5%;
+}
+
 /* LISTS */
 
 .container .container li {
