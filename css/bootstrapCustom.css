@@ -45,7 +45,7 @@ h3 {
 /* HIGHLIGHTS */
 
 .highlight_gold {
-    color: gold;
+    color: rgb(0, 255, 242);
 }
 
 .highlight_green {
@@ -61,7 +61,7 @@ a {
 
 #navigation {
     position: fixed;
-    width: 15%;
+    width: 12.5%;
     min-width: 75pt;
     padding: 15pt;
     padding-left: 0;
@@ -70,10 +70,11 @@ a {
 #navigation li {
     text-decoration: none;
     list-style-type: none;
-    padding: 12pt;
+    padding: 10pt;
     text-align: center;
     border: solid 1px white;
     margin: 4pt;
+    font-size: 12pt;
 }
 
 #navigation a {
