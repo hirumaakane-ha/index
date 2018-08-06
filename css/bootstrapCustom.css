@@ -86,6 +86,13 @@ a {
     color: salmon;
 }
 
+#navigation-mobile {
+    padding-top: 5pt;
+    padding-bottom: 5pt;
+    margin-top: 4pt;
+    margin-bottom: 4pt;
+}
+
 #navigation-mobile li {
     text-decoration: none;
     list-style-type: none;
