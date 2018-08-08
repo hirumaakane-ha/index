@@ -95,10 +95,10 @@ a {
 }
 
 #navigation-mobile {
-    padding-top: 5pt;
-    padding-bottom: 5pt;
-    margin-top: 4pt;
-    margin-bottom: 4pt;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 3pt;
+    padding-bottom: 3pt;
 }
 
 #navigation-mobile li {
