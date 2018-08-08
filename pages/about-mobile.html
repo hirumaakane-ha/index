@@ -20,7 +20,7 @@
         <meta property="og:image" content="https://s3.ca-central-1.amazonaws.com/hirumaakane.cdn/hoanganhramen.img/logo.jpg">
         <!-- External scripts and CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="css/bootstrapCustom.css">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrapCustom.css">
         <link rel="icon" type="image/ico" href="https://s3.ca-central-1.amazonaws.com/hirumaakane.cdn/hoanganhramen.img/webicon.ico">
         <script src="../css/scripts.js"></script>
         <!--GOOGLE FONT IMPORT-->
@@ -50,13 +50,13 @@
         </script>
     </head>
     <body onload="startTime()" onload="detectDevice()">
-        <div class="container">
+        <div class="container-fluid">
             <h1>Hoang Anh Ramen <span class="highlight_gold">| I'm ducking lazy and tired</span></h1>
             <p>in case you have not noticed, you have been redirected to the mobile site</p>
             <div id="txt"></div>
         </div>
         <!-- NAVBAR -->
-        <div class="container" id="navigation-mobile" style="background: rgb(0, 112, 103);">
+        <div class="container-fluid" id="navigation-mobile" style="background: rgb(0, 112, 103);">
             <div class="pos-f-t">
             </div>
                 <nav class="navbar navbar-dark" style="background: rgb(0, 112, 103);">
@@ -68,38 +68,34 @@
                 <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
                     <div class="container" style="background: rgb(0, 112, 103);">
                       <ul>
-                          <li><a href=".">Home</a></li>
-                          <li><a href="posts/landing.html">Posts</a></li>
-                          <li><a href="pages/about.html">About</a></li>
-                          <li><a href="pages/contact.html">Contact</a></li>
+                          <li><a href="../index.html">Home</a></li>
+                          <li><a href="../posts/landing.html">Posts</a></li>
+                          <li><a href="about-mobile.html">About</a></li>
+                          <li><a href="contact-mobile.html">Contact</a></li>
                       </ul>
                     </div>
                 </div>
         </div>
-        <div class="container" id="newsfeed">
-            <div class="banner"></div>
-            <h2>Blog newsfeed and updates: </h2>
-                <ul>
-                    <li><span class="highlight_red">August 7th, 2018 |</span> Release of Night 5 is slated to be released on August 8th, 2018.</li>
-                    <li><span class="highlight_red">August 5th, 2018 |</span> Release of Night 5 is delayed due to some hardware errors that prevent me from coding</li>
-                    <li><span class="highlight_red">July 30th, 2018 |</span> As of this day, my blog shall put a pause on posting content due to the author is having an exam. <br>Sorry for the inconvenience ❤️<br> The blog shall continue after my final exam which is on 1st of August.</li>                        
-                    <li><span class="highlight_red">July 25th, 2018 |</span> Implementation of erno404 page and Night 4 post goes live</li>
-                </ul>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <ul>
+                        <li><span class="highlight_gold">ALIASES</span> {That facebook} (JP abbrev.), Fugunagi (most IGNs)</li>
+                        <li><span class="highlight_gold">BORN</span> 1999 in SGN, VN.</li>
+                        <li><span class="highlight_gold">E-MAIL</span> nguyenhoanganh.ted@yahoo.co.jp</li>
+                        <li><span class="highlight_gold">MOVED</span> my sloth self to Montreal, CA. for college/university.</li>
+                        <li><span class="highlight_gold">CONCENTRATION</span> Science, ComSci.</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <img class="image-cropper" src="https://s3.ca-central-1.amazonaws.com/hirumaakane.cdn/hoanganhramen.img/avatar.jpg">
+                </div>
+                <div class="col-md-4">
+                    <h2 style="padding-top: 25%; padding-left: 0;">Nguyen Hoang Anh</h2>
+                    <p style="opacity: .9; padding-left: 0;">- Owner, author of the site</p>
+                </div>
+            </div>
         </div>
-        <div class="container">
-            <h3 style="border-bottom: solid cyan 1px; padding-bottom: 12pt;">Before you go on, why not save time and read the preface to see<br><span class="highlight_red">if my writing fits your style?</span></h3>
-            <ul>
-                <li>I have always been interested in technology ever since I was a kid. My childhood was filled with creativity and the freedom to explore the world around me. My childhood dream was to join the ranks of those who developed those incredible digital machineries. My primary years unfolded after my eyes as a disastrous period. The schooling system tried to mold myself into the image of an obedient pupil who obeys. During one encounter in 3rd grade, I just stopped trying to innovate.</li>
-                <li>My secondary years were not as bad, as I found new friends who had kindled the creative minds like I did. We formed a hanging out group. We won some competitions. Some animosities were directed towards me, for no reasons. My group stayed on my side and helped me through the ordeal. We went our separate ways after going to high school.</li>
-                <li>In high school, I made some new ones and formed a lasting relationship, including one of childhood friends. We still keep in touch till today. I began to gravitate towards politics and diplomacy because I joined a volunteering organization and my scores on science-y subjects didn’t convince me to chase after my dream while my friends started gravitating towards computer science and engineering.</li>
-                <li>(Current) Cegep – A post-secondary institution in Quebec. I studied Psychology and Political Science. Got tired of the stupid number of essays and stupid number of extra courses that I had to take and also of the ridiculous office politics in the organization that resulted in me being booted. I changed my program to Pure/Applied Science. I am now facing my old enemies: Bio and Chem. Still, the program haunts me. I have to re-learn everything in high school. Bored. I started programming and coding. I feel good. I continue to do so, developing my own blog and learning programming. Can’t wait to get to university. As for my group, most of them are in ComSci, others are in other engineering fields and we still communicate.</li>
-            </ul>
-            <a href="posts/landing.html" class="btn-primary" style="padding: 5pt; background: rgb(0, 146, 102);">START HERE</a>
-        </div>
-
-
-
-
 
         <!-- Bootstrap Scripts-->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -108,7 +104,7 @@
     </body>
     <!--FOOTER-->
     <footer>
-    <div class="container" id="footer">
+    <div class="container-fluid" id="footer">
         <p>Hoang Anh Ramen Site. All contents are copyrighted by Hoang Anh N. &copy; 2018</p>
         <p>Contents from third-parties are explicitly stated</p>
     </footer>

@@ -18,6 +18,9 @@ body {
 
 .container-fluid {
     margin-top: 2.5%;
+    padding: 3%;
+    background: rgb(4, 7, 12);
+    color: white;
 }
 
 /* NAVBAR */
