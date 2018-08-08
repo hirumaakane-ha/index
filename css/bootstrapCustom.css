@@ -147,6 +147,15 @@ img {
     font-weight: 300;
 }
 
+li {
+    text-align: justify;
+    font-size: 19pt;
+    margin-top: 10pt;
+    line-height: 25pt;
+    color: rgb(175, 169, 155);
+    font-weight: 300;
+}
+
 
 /* CLOCK */
 
@@ -173,9 +182,19 @@ img {
     margin-bottom: 12pt;
     padding-bottom: 10pt;
     border-bottom: solid cyan 1pt;
+    margin-top: 15pt;
 }
 
 #newsfeed li {
     padding-top: 5pt;
     padding-bottom: 5pt;
+    color: white;
+    font-size: 15pt;
+}
+
+.banner {
+    background: url(https://s3.ca-central-1.amazonaws.com/hirumaakane.cdn/hoanganhramen.img/banner-2.jpg);
+    padding: 10% 0 10% 0;
+    background-repeat: no-repeat;
+    background-size: auto;
 }
