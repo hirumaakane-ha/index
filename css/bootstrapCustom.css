@@ -23,14 +23,6 @@ body {
     color: white;
 }
 
-.collapse li {
-    list-style-type: none;
-}
-
-.collapse a {
-    text-decoration: none;
-    color: white;
-}
 
 /* NAVBAR */
 
@@ -187,7 +179,8 @@ li {
 /* FOOTER */
 
 #footer {
-    background-color: rgb(5, 9, 24);
+    margin-top: 5%;
+    background-color: rgb(1, 18, 39);
     text-align: center;
     color: rgb(255, 255, 255);
 }
