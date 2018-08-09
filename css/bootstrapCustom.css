@@ -23,6 +23,15 @@ body {
     color: white;
 }
 
+.collapse li {
+    list-style-type: none;
+}
+
+.collapse a {
+    text-decoration: none;
+    color: white;
+}
+
 /* NAVBAR */
 
 .bg-color {
@@ -63,6 +72,12 @@ h3 {
 
 a {
     text-decoration: none;
+}
+
+/* BUTTONS */
+.btn.btn-primary {
+    background: rgb(0, 65, 102);
+    color: white;
 }
 
 /* Navigation */
