@@ -48,22 +48,6 @@
                 if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
                 return i;
             }
-            function detectDevice() {
-                if (window.innderWidth >= 700 || window.innerHeight >= 700) {
-                    return true;
-                }
-                else {
-                    return false;
-                }
-            }
-            function Redirect() {
-               window.location="about.html";
-            }
-
-            var device_query = detectDevice();
-            if (device_query == true) {
-                Redirect();
-            }
         </script>
     </head>
     <body onload="startTime()" onload="detectDevice()">
@@ -95,11 +79,11 @@
         </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4" id="about-mobile">
                     <ul>
                         <li><span class="highlight_gold">ALIASES</span> {That facebook} (JP abbrev.), Fugunagi (most IGNs)</li>
                         <li><span class="highlight_gold">BORN</span> 1999 in SGN, VN.</li>
-                        <li><span class="highlight_gold">E:</span> nguyenhoanganh.ted@yahoo.co.jp</li>
+                        <li><span class="highlight_gold">E</span> nguyenhoanganh.ted@yahoo.co.jp</li>
                         <li><span class="highlight_gold">MOVED</span> my sloth self to Montreal, CA. for college/university.</li>
                         <li><span class="highlight_gold">CONCENTRATION</span> Science, ComSci.</li>
                     </ul>

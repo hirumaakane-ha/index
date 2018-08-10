@@ -246,3 +246,9 @@ li {
 .contact h2 {
     font-size: 18pt;
 }
+
+/* ABOUT PAGE SPECIFICS */
+
+#about-mobile li {
+    font-size: 14pt;
+}
