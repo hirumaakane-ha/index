@@ -166,6 +166,11 @@ li {
     font-weight: 300;
 }
 
+/* COLUMNS AND ROWS */
+
+.col-md-4 {
+    border-left: solid white 1px;
+}
 
 /* CLOCK */
 
@@ -208,4 +213,36 @@ li {
     padding: 10% 0 10% 0;
     background-repeat: no-repeat;
     background-size: auto;
+}
+
+/* CONTACT PAGE SPECIFICS */
+
+.fa {
+    font-size: 100px;
+    padding: 20px;
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    color: white;
+  }
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: rgb(51, 104, 250);
+  }
+
+.fa-twitter {
+    background: rgb(0, 162, 255);
+  }
+
+.fa-google {
+    background: rgb(255, 58, 58);
+}
+
+.contact h2 {
+    font-size: 18pt;
 }
