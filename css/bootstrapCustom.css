@@ -168,7 +168,7 @@ li {
 
 /* COLUMNS AND ROWS */
 
-.col-md-4 {
+.col-md-4.contact {
     border-left: solid white 1px;
 }
 
