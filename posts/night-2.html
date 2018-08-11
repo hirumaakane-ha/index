@@ -13,15 +13,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--Facebook props-->
         <meta property="og:title" content="Hoang Anh Ramen">
-        <meta property="og:description" content="Where Self-pity Feels Like a Delicacy">
+        <meta property="og:description" content="Night 2 | Setting Up a Botched FTP Server">
         <meta property="og:image:type" content="image/jpeg">
         <meta property="og:image:width" content="200">
         <meta property="og:image:height" content="200">
-        <meta property="og:image" content="https://s3.ca-central-1.amazonaws.com/hirumaakane.cdn/hoanganhramen.img/night-2">
+        <meta property="og:image" content="https://s3.ca-central-1.amazonaws.com/hirumaakane.cdn/hoanganhramen.img/night-2.jpg">
         <!-- External scripts and CSS -->
-        <link rel="stylesheet" href="../css/pageStyle.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrapCustom.css">
         <link rel="icon" type="image/ico" href="https://s3.ca-central-1.amazonaws.com/hirumaakane.cdn/hoanganhramen.img/webicon.ico">
         <script src="../css/scripts.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!--GOOGLE FONT IMPORT-->
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Oxygen+Mono" rel="stylesheet"> 
@@ -29,7 +31,6 @@
         <link href="https://fonts.googleapis.com/css?family=Comfortaa|Libre+Barcode+128+Text" rel="stylesheet">
 
         <!-- STYLING -->
-
         <!-- Scripting -->
         <script>
             function startTime() {
@@ -47,50 +48,84 @@
                 if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
                 return i;
             }
+
+            function detectDevice() {
+                if (window.innderWidth <= 700 || window.innerHeight <= 700) {
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            }
+            function Redirect() {
+               window.location="mobile/night-2.html";
+            }
+
+            var device_query = detectDevice();
+            if (device_query == true) {
+                Redirect();
+            }
         </script>
     </head>
-
-    <body onload="startTime()">
-        <div class="header">
-            <h1><span class="highlight">Hoang Anh Ramen</span> | Self-pity = Delicacy</h1>
+    <body onload="startTime()" onload="detectDevice()">
+        <div class="container">
+            <h1>Hoang Anh Ramen <span class="highlight_gold">| Self-Pity = Delicacy</span></h1>
             <div id="txt"></div>
         </div>
-        <div class="sidenav">
-            <a href="../index.html">Home</a>
-            <a style="margin: 0 50% 1% 0; border-bottom: solid rgb(0, 153, 120) 2px;" href="landing.html">Posts</a>
-            <a href="night-1.html">Night 1</a>
-            <a href="night-3.html">Night 3</a>
-            <a href="night-4.html">Night 4</a>
+        <!-- NAVBAR -->
+        <div class="container" id="navigation" style="background: rgb(0, 112, 103);">
+            <div class="pos-f-t">
+            </div>
+                <nav class="navbar navbar-dark" style="background: rgb(0, 112, 103);">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <p style="display: inline;">Navigation</p>
+                  </button>
+            </nav>
+                <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+                    <div class="container" style="background: rgb(0, 112, 103);">
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="landing.html">Posts</a></li>
+                            <li><a href="night-1.html">Night 1</a></li>
+                            <li><a href="night-3.html">Night 3</a></li>
+                            <li><a href="night-4.html">Night 4</a></li>
+                        </ul>
+                </div>                     
+                    </div>
         </div>
-        <div class="framework">
-            <section id="post-self">
-                <div class="header">
-                    <h3>Night 2 - Mon, Jul 9th, ’18:</h3>
-                </div>
-                <div id="post">
-                    <h1 style="border-bottom: solid rgb(0, 153, 120) 2px; padding-bottom: 3pt;">Copping a Domain and SSL…</h1>
-                    <ul>
-                        <li>My website adventure continued after the sushi fes that I consumed the afternoon before. I had to choose between Apache2 and nginx as the HTTP web server for my Ubuntu server machine. Somehow it didn’t take me long to reach a decision for Apache. Maybe it was because Apache sounded phonetically catchier and rememberable compared to nginx(?)</li>
-                        <li>2:30AM, I finally finished the initial setup for my server with Apache installed. Then, I needed to get a certificate for secured connection on my website. Now, at the time of writing this post, I still don’t know the deep implications that the certification process had to do, maybe I’ll figure it out in the future. I used Letsencrypt package to get certified. However, little did I know nor did the tutorial specify, Letsencrypt needed a challenge program or, in this case, Certbot to do whatever it needed to do for my website certification. I found this out by Googling. So, I installed Certbot from probably a non-canonical repository as far as I could remember. And, the certification process worked like a charm.</li>
-                        <li>After I got certified, I realized it was around 4AM already but I still pushed on. In retrospect, I did the initial setup of a web server by installing (A)pache. But I did not completely setup the LAMP stack. So, I reviewed on my overlook and drew myself a lesson: don’t always diverge from the original tutorial because it might mess up my progress flow. Anyway, I traced back to where I left in the complete tutorial and managed to complete my LAMP stack for the server. However, everything did not go so smoothly with mysql hogging on my ass for centuries with authentication failures. But, by following some godly tutorials that I found on Google, I barely successfully set up the M in LAMP. For the (P), I have not looked into it further since my brain was already a mess at the time.</li>
-                        <li>Karma is a bit fast lately as to balance out the very huge setback with mysql, it gave me the blissful and smooth-sailing domain name acquisition and DNS redirecting. I bought my domain name, which was this website, hoanganhramen.xyz for a meagre $20 barebone option that came WHOIS lookup prevention on most of the information from internetbs.com.</li>
-                        <li>The registration process for the domain name was pretty straight forward as it asked for my contact information. It was like registering your ownership for a car, not that I had done such process before but you could think of it that way. Now. The DNS, short for Domain Name System, takes the human recognizable domain names (i.e., hoanganhramen.xyz) and converts it to computer language which is frequently referred to as IP address (i.e., 35.170.187.95)</li>
-                        <li>After I had taken ownership of my dazzlingly brand new domain name, I must then associate the name with the public-facing IP address of my EC2 web instance. So, I did some digging around the AWS Console and found out about Route 53 included in the AWS. I opened the Route 53 and created a new hosted zone. By copying the nameservers offered by Route 53 configurations, I input those into the domain name settings on my registrar’s (internetbs.com) management. I then needed to wait for about 2-3 hours for the changes to propagate throughout the internet and services and whatever it was.</li>
-                        <li>AND bam, I jumped for joy as my domain name was then in working conditions.</li>
-                    </ul>
-                    <p style="text-align: right; font-style: oblique;">Tune in next post for my horrible recollection of setting up an FTP server.</p>
-                    <img src="https://s3.ca-central-1.amazonaws.com/hirumaakane.cdn/hoanganhramen.img/night-2.jpg">
-                </div>
-            </section>
-            <section id="navigator">
-                <p><a href='landing.html'>Return</a></p>
-                <p><a href='../pages/about.html'>Learn more</a></p>
-            </section>
-        </div>
-    </body>
 
+        <div class="container">
+            <h2><span class="highlight_green">Night 2</span> - Mon, Jul 9th, ’18:</h2>
+            <div class="container" style="border-bottom: solid 1px gold;">    
+                <!-- <h3 class="highlight_gold">Page is under construction</h3> -->
+                <h3>Copping a Domain and SSL…</h3>
+            </div>
+            <div class="container">
+                <li>My website adventure continued after the sushi fes that I consumed the afternoon before. I had to choose between Apache2 and nginx as the HTTP web server for my Ubuntu server machine. Somehow it didn’t take me long to reach a decision for Apache. Maybe it was because Apache sounded phonetically catchier and rememberable compared to nginx(?)</li>
+                <li>2:30AM, I finally finished the initial setup for my server with Apache installed. Then, I needed to get a certificate for secured connection on my website. Now, at the time of writing this post, I still don’t know the deep implications that the certification process had to do, maybe I’ll figure it out in the future. I used Letsencrypt package to get certified. However, little did I know nor did the tutorial specify, Letsencrypt needed a challenge program or, in this case, Certbot to do whatever it needed to do for my website certification. I found this out by Googling. So, I installed Certbot from probably a non-canonical repository as far as I could remember. And, the certification process worked like a charm.</li>
+                <li>After I got certified, I realized it was around 4AM already but I still pushed on. In retrospect, I did the initial setup of a web server by installing (A)pache. But I did not completely setup the LAMP stack. So, I reviewed on my overlook and drew myself a lesson: don’t always diverge from the original tutorial because it might mess up my progress flow. Anyway, I traced back to where I left in the complete tutorial and managed to complete my LAMP stack for the server. However, everything did not go so smoothly with mysql hogging on my ass for centuries with authentication failures. But, by following some godly tutorials that I found on Google, I barely successfully set up the M in LAMP. For the (P), I have not looked into it further since my brain was already a mess at the time.</li>
+                <li>Karma is a bit fast lately as to balance out the very huge setback with mysql, it gave me the blissful and smooth-sailing domain name acquisition and DNS redirecting. I bought my domain name, which was this website, hoanganhramen.xyz for a meagre $20 barebone option that came WHOIS lookup prevention on most of the information from internetbs.com.</li>
+                <li>The registration process for the domain name was pretty straight forward as it asked for my contact information. It was like registering your ownership for a car, not that I had done such process before but you could think of it that way. Now. The DNS, short for Domain Name System, takes the human recognizable domain names (i.e., hoanganhramen.xyz) and converts it to computer language which is frequently referred to as IP address (i.e., 35.170.187.95)</li>
+                <li>After I had taken ownership of my dazzlingly brand new domain name, I must then associate the name with the public-facing IP address of my EC2 web instance. So, I did some digging around the AWS Console and found out about Route 53 included in the AWS. I opened the Route 53 and created a new hosted zone. By copying the nameservers offered by Route 53 configurations, I input those into the domain name settings on my registrar’s (internetbs.com) management. I then needed to wait for about 2-3 hours for the changes to propagate throughout the internet and services and whatever it was.</li>
+                <li>AND bam, I jumped for joy as my domain name was then in working conditions.</li>
+                <img src="https://s3.ca-central-1.amazonaws.com/hirumaakane.cdn/hoanganhramen.img/night-2.jpg">
+                <p>Tune in next post for my horrible recollection of setting up an FTP server.</p>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- Bootstrap Scripts-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
     <!--FOOTER-->
     <footer>
+    <div class="container" id="footer">
         <p>Hoang Anh Ramen Site. All contents are copyrighted by Hoang Anh N. &copy; 2018</p>
         <p>Contents from third-parties are explicitly stated</p>
     </footer>
