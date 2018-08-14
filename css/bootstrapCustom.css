@@ -150,7 +150,7 @@ img {
     border: 10%;
 }
 
-img.demo:hover {
+img.demo:active {
     transform: scale(4.0);
 }
 
