@@ -150,8 +150,12 @@ img {
     border: 10%;
 }
 
-img.demo:active {
-    transform: scale(4.0);
+.demo {
+    max-height: 400px;
+}
+
+.demo:hover {
+    transform: scale(5.0);
 }
 
 /* LISTS */
