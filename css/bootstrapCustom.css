@@ -150,8 +150,17 @@ img {
     border: 10%;
 }
 
+<<<<<<< HEAD
 img.demo:active {
     transform: scale(3.0);
+=======
+.demo {
+    max-height: 400px;
+}
+
+.demo:hover {
+    transform: scale(5.0);
+>>>>>>> refs/remotes/origin/master
 }
 
 /* LISTS */
