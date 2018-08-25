@@ -151,7 +151,7 @@ img {
 }
 
 img.demo:active {
-    transform: scale(4.0);
+    transform: scale(3.0);
 }
 
 /* LISTS */
