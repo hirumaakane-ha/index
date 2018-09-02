@@ -269,3 +269,17 @@ li {
 #about-mobile li {
     font-size: 14pt;
 }
+
+/* Terms and Conditions page specifics */
+#nav-terms li {
+    display: inline-block;
+    margin-left: 12pt;
+    margin-right: 12pt;
+    padding-left: 0;
+    padding-right: 1rem;
+}
+
+#nav-terms a {
+    color: rgb(56, 248, 248);
+    text-transform: uppercase;
+}
