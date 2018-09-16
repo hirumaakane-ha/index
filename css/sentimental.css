@@ -1,0 +1,23 @@
+/* global */
+body {
+    background: url(https://s3.ca-central-1.amazonaws.com/hirumaakane.cdn/hoanganhramen.img/sentimental/sentimental-background.jpeg);
+    background-repeat: repeat-y;
+    color: white;
+}
+
+.container-fluid {
+    padding: 24pt;
+    margin-bottom: 3rem;    
+}
+
+#header {
+    background: rgb(48, 48, 48);
+}
+
+#post {
+    background: rgb(48, 48, 48);
+}
+
+#footer {
+    background: rgb(48, 48, 48);
+}
