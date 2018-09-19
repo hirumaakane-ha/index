@@ -12,17 +12,21 @@ body {
     background: rgba(0, 153, 255, 0.3);
 }
 
+#landing {
+    background: rgb(240, 240, 240);
+}
+
 h3 {
     margin-bottom: 3rem;
 }
 
 #header {
-    
+    padding-top: 4rem;
 }
 
 #time {
-    font-size: 56pt;
-    text-align: right;
+    font-size: 32pt;
+    text-align: left;
     color: rgb(249,233,236);
 }
 
@@ -48,6 +52,32 @@ h3 {
     margin-top: 1rem;
     margin-bottom: 1rem;
     letter-spacing: 1pt;
+}
+
+#navigation {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#navigation li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 26pt;
+    background: rgba(0,0,0,.2);
+    padding: 25pt;
+    border-bottom: solid rgba(255, 255, 255, 0.384) 1px;
+}
+
+.collapse {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+#navigation a {
+    color: white;
 }
 
 #footer {
