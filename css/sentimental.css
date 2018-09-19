@@ -3,21 +3,65 @@ body {
     background: url(https://s3.ca-central-1.amazonaws.com/hirumaakane.cdn/hoanganhramen.img/sentimental/sentimental-background.jpeg);
     background-repeat: repeat-y;
     color: white;
+    font-family: "Roboto", sans-serif;
 }
 
 .container-fluid {
     padding: 24pt;
-    margin-bottom: 3rem;    
+    margin-bottom: 3rem;
+    background: rgba(0, 153, 255, 0.3);
+}
+
+h3 {
+    margin-bottom: 3rem;
 }
 
 #header {
-    background: rgb(48, 48, 48);
+    
+}
+
+#time {
+    font-size: 56pt;
+    text-align: right;
+    color: rgb(249,233,236);
 }
 
 #post {
-    background: rgb(48, 48, 48);
+    font-size: 16pt;
+    background: rgba(0,0,0,.3);
+    color: rgb(255, 250, 239);
+}
+
+#disclaimer {
+    font-style: italic;
+    color: rgb(0, 145, 189);
+}
+
+#post ul {
+    margin-left: 64pt;
+    margin-right: 64pt;
+}
+
+#post li {
+    text-align: justify;
+    list-style: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1pt;
 }
 
 #footer {
-    background: rgb(48, 48, 48);
+   
+}
+
+#highlight_pink {
+    color: rgb(255, 87, 179);
+}
+
+#highlight_blue {
+    color: rgb(0, 243, 231);
+}
+
+#highlight_green {
+    color: rgb(0, 199, 90);
 }

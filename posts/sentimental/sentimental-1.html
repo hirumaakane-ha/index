@@ -40,7 +40,7 @@
                 var s = today.getSeconds();
                 m = checkTime(m);
                 s = checkTime(s);
-                document.getElementById('txt').innerHTML = "| " +
+                document.getElementById('time').innerHTML = "| " +
                 h + " : " + m + " : " + s;
                 var t = setTimeout(startTime, 500);
             }
@@ -52,11 +52,20 @@
     </head>
     <body onload="startTime()" onload="detectDevice()">
         <div class="container-fluid" id="header">
-            <h1>Hoang Anh Ramen | Sentimental: An Ideal</h1>
+            <h1><span id="highlight_pink">HOANG ANH RAMEN</span> | Sentimental: An Ideal</h1>
+            <p id="time"></p>
         </div>
         
         <div class="container-fluid" id="post">
-
+            <h3>Timestamp: 15/09/2018 @ 10:15PM</h3>
+            <p id="disclaimer">Disclaimer: Some contents are unsuitable for people with anxiety or those suffering from depression.</p>
+            <p id="disclaimer">Reader's discretion is advised.</p>
+            <ul>
+                <li><span id="highlight_green">The cliched talk about being mentally and psychologically strong</span> is that you have to deal with your emotions and all the sentimental that arise when you are in a difficult situation. I think it is ignorant to say that. At least for my part, being dropped amidst such situation is equivalent to crashing a plane down in the middle of nowhere, no one else survives but you and some food stored on the plane.</li>
+                <li><span id="highlight_green">Let’s say that the food is your will.</span> And as day goes by, that will to survive, to head towards a safe haven is drying up. Suddenly, you realize that optimistic attitude of yours is being pushed aside by a gloomy perspective - a daunting perspective fueled by the many mishaps and criticism always creeping around your oasis like a bunch of dire animals ready to eat you up alive.</li>
+                <li><span id="highlight_green">You desperately want to connect but cannot</span> as there is (jokingly) no WIFI out in the middle of nowhere. If you cannot defeat them, join them. So, you shut out all the hopeless emotions of not being found and rescued; you have now accepted your long-predicted fate.</li>
+                <li><span id="highlight_green">Day 1498 being out here.</span> The humanity within you is gone, torn apart by the vicious monstrosities. You whisper to yourself that the mending will not come anytime soon, that these grey clouds hovering above your head has permanently created a dome of infinite and endless night. But during this endless night, you feel so… at peace. Why? Why? If this biodome of depression hovers above your head some few years ago, you would have gone insane. But now, you sense the infinite void equates to the everlasting inner peace. Is this ascension? Is this transcendence? Have you finally lost your mind? But no, you feel just as sane as the ebony lynx lying asleep soundly next to you. You think just as keen as the sable crow nestles on the nearest wicked birch branch. You are as loyal as the black mamba coiling itself happily on your right shoulder. When have you joined this communion that is as tight as it is dangerous. Is it because of the guaranteed mutual destruction of its elements? Or is it because of the mutual understanding between the individuals at times like this?</li>
+            </ul>
         </div>
 
 
