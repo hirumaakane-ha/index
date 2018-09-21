@@ -6,14 +6,14 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>HARamen | Sentimental 1</title>
-        <meta name="description" content="Where Self-pity Feels Like a Delicacy">
+        <title>HASalt | Sentimental</title>
+        <meta name="description" content="Makes you want to kil yourself">
         <meta name="author" content="Nguyen Hoang Anh">
         <meta name="developer" content="Nguyen Hoang Anh">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--Facebook props-->
         <meta property="og:title" content="Hoang Anh Ramen">
-        <meta property="og:description" content="Sentimental 1 | An Ideal">
+        <meta property="og:description" content="Sentimental Homepage">
         <meta property="og:image:type" content="image/jpeg">
         <meta property="og:image:width" content="200">
         <meta property="og:image:height" content="200">
@@ -40,7 +40,7 @@
                 var s = today.getSeconds();
                 m = checkTime(m);
                 s = checkTime(s);
-                document.getElementById('time').innerHTML = "| " +
+                document.getElementById('time').innerHTML = "👌 " +
                 h + " : " + m + " : " + s;
                 var t = setTimeout(startTime, 500);
             }
@@ -51,10 +51,27 @@
         </script>
     </head>
 
-    <body style="background: rgb(240, 240, 240);">
-        <div class="container-fluid" id="landing"></div>
+    <body style="background: rgb(240, 240, 240);" onload="startTime()" onload="detectDevice()">
+        <div class="container-fluid" id="landing">
+            <h1><a href="../../index.html">The Soup Is Too Salty</a> | Sentimental Homepage</h1>
+            <h1 id="time" style="color: rgb(255, 109, 153);"></h1>
+        </div>
+        <div class="container-fluid" id="landing_body">
+            <p>Welcome to the latest blog topic of Hoang Anh</p>
+            <p>When I created this new blog topic, I was in an oblivion.</p>
+            <p>So expect the content to be as dark as an average NBA player.</p>
+        </div>
+        <div class="container-fluid" id="landing_body">
+            <h3>// All blog posts</h3>
+            <ul>
+                <li><a href="sentimental-1.html">September 15th, 2018: Sentimental 1 - An Ideal</a></li>
+            </ul>
+        </div>
     </body>
 
     <footer>
-
+        <div class="container-fluid" id="footer">
+            <p>Content belongs to Nguyen Hoang Anh &copy; 2018</p>
+            <p>Third-party content is explicitly stated.</p>
+        </div>
     </footer>
