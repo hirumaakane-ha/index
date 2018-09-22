@@ -121,3 +121,9 @@ h3 {
 #highlight_green {
     color: rgb(0, 199, 90);
 }
+
+img {
+    display: inline-block;
+    max-width: 400px;
+    margin: 2%;
+}
