@@ -1,0 +1,14 @@
+body {
+    color: white;
+
+}
+
+.container-fluid {
+    background: grey;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+h1 {
+    padding: 1rem;
+}
