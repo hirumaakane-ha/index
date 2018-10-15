@@ -8,6 +8,8 @@ body {
     margin-bottom: 2rem;
     padding-top: 1rem;
     padding-bottom: .75rem;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 #header {
@@ -17,7 +19,7 @@ body {
 }
 
 #header h1 {
-    margin-left: 36pt;
+   
 }
 
 h2 {
@@ -69,6 +71,11 @@ h2 {
 /* Index styling */
 
 #index {
-    padding-left: 10%;
-    padding-right: 10%;
+    
+}
+
+/* Chapter List styling */
+
+#chapter-list {
+
 }
