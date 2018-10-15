@@ -1,0 +1,16 @@
+/* Global styling */
+
+body {
+
+}
+
+.container-fluid {
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#header {
+    background: black;
+    color: white;
+}
