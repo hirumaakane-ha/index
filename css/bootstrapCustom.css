@@ -82,9 +82,9 @@ a {
 
 #navigation {
     position: fixed;
-    width: 11.2%;
-    min-width: 75pt;
-    padding: 15pt;
+    width: 12.45%;
+    min-width: 85pt;
+    padding: 17pt;
     padding-left: 0;
 }
 
@@ -95,7 +95,7 @@ a {
     text-align: center;
     border: solid 1px white;
     margin: 3pt;
-    font-size: 11.5pt;
+    font-size: 10pt;
 }
 
 #navigation a {
@@ -230,6 +230,10 @@ li {
     padding: 10% 0 10% 0;
     background-repeat: no-repeat;
     background-size: auto;
+}
+
+.banner li {
+    margin-left: 4rem;
 }
 
 /* CONTACT PAGE SPECIFICS */
