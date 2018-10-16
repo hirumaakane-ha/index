@@ -1,0 +1,1 @@
+alert("You are now entering The Chronicle")
