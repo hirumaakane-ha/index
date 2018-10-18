@@ -79,3 +79,10 @@ h2 {
 #chapter-list {
 
 }
+
+#chapter-list li {
+    margin-bottom: 2rem;
+    font-size: 16pt;
+}
+
+/* chapter div */
