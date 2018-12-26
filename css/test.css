@@ -1,14 +1,45 @@
 body {
-    color: white;
-
+    color: #e6e6e6
 }
 
 .container-fluid {
-    background: grey;
+    background: #003e57;
+    padding: 3rem;
     margin-bottom: 2rem;
-    padding: 1rem;
 }
 
-h1 {
-    padding: 1rem;
+.container {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    background: #320049;
+    padding-top: 2rem;
+}
+
+form {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24pt;
+    padding: 12px 20px;
+    margin: 2rem;
+    display: inline-block
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 2rem;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+#header {
+    border-bottom: #303030 solid 1px;
+    text-align: center;
+}
+
+#reappear {
+    font-family: 'Heebo', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffd000;
+    font-size: 45pt;
 }
