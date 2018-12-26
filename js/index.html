@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>HARamen | Welcome</title>
+        <meta name="description" content="Where Self-pity Feels Like a Delicacy">
+        <meta name="author" content="Nguyen Hoang Anh">
+        <meta name="developer" content="Nguyen Hoang Anh">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Facebook props-->
+        <meta property="og:title" content="Hoang Anh Ramen">
+        <meta property="og:description" content="Where... Self-pity IS a delicacy. fml.">
+        <meta property="og:image:type" content="image/jpeg">
+        <meta property="og:image:width" content="200">
+        <meta property="og:image:height" content="200">
+        <meta property="og:image" content="https://s3.ca-central-1.amazonaws.com/hirumaakane.cdn/hoanganhramen.img/logo.jpg">
+        <!-- External scripts and CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/bootstrapCustom.css">
+        <link rel="icon" type="image/ico" href="https://s3.ca-central-1.amazonaws.com/hirumaakane.cdn/hoanganhramen.img/webicon.ico">
+        <script src="../css/scripts.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--GOOGLE FONT IMPORT-->
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oxygen+Mono" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa|Libre+Barcode+128+Text" rel="stylesheet">
+
+        <!-- STYLING -->
+        <!-- Scripting -->
+        <script>
+            function startTime() {
+                var today = new Date();
+                var h = today.getHours();
+                var m = today.getMinutes();
+                var s = today.getSeconds();
+                m = checkTime(m);
+                s = checkTime(s);
+                document.getElementById('txt').innerHTML = "| " +
+                h + " : " + m + " : " + s;
+                var t = setTimeout(startTime, 500);
+            }
+            function checkTime(i) {
+                if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+                return i;
+            }
+
+            function detectDevice() {
+                if (window.innderWidth <= 700 || window.innerHeight <= 700) {
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            }
+            function Redirect() {
+               window.location="index-mobile.html";
+            }
+
+            var device_query = detectDevice();
+            if (device_query == true) {
+                Redirect();
+            }
+        </script>
+    </head>
+    <body onload="startTime()" onload="detectDevice()">
+        <div class="container">
+            <h1>Hoang Anh Ramen <span class="highlight_gold">| Where Lamentation = Delicacy</span></h1>
+            <div id="txt"></div>
+        </div>
+        <!-- NAVBAR -->
+        <div class="container" id="navigation" style="background: rgb(0, 112, 103);">
+            <div class="pos-f-t">
+            </div>
+                <nav class="navbar navbar-dark" style="background: rgb(0, 112, 103);">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <p style="display: inline;">Menu</p>
+                  </button>
+                </nav>
+                <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+                    <div class="container" style="background: rgb(0, 112, 103);">
+                      <ul>
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="posts/landing.html">Posts</a></li>
+                          <li><a href="posts/sentimental/landing.html">Sentimental</a></li>
+                          <li><a href="pages/about.html">About</a></li>
+                          <li><a href="pages/contact.html">Contact</a></li>
+                          <li><a href="test.html">EXPERIMENTAL</a></li>
+                          <li><a href="posts/the-chronicle/">The Chronicle</a></li>  
+                        </ul>
+                    </div>
+                </div>
+        </div>
+        <div class="container" id="newsfeed">
+            <div class="banner"></div>
+            <h2>Blog newsfeed and updates: </h2>
+                <ul>
+                    <li><span class="highlight_red">September 30th, 2018 |</span> Part 3 of Sentimental is now published <a href="posts/sentimental/sentimental-3.html">Go to the part</a></li>
+                    <li><span class="highlight_red">September 21st, 2018 |</span> Sentimental Blog Topic is officially published <a href="posts/sentimental/landing.html">Go to the blog topic</a></li>
+                    <li><span class="highlight_red">August 24th, 2018 |</span> Night 6 - Last post for August is published. <a href="posts/night-6.html">Click here</a></li>
+                    <li><span class="highlight_red">August 19th, 2018 |</span> Subdomain <a href="https://misc.hoanganhramen.xyz">Feed @ Hoang Anh Ramen</a> is now live!!</li>
+                    <li><span class="highlight_red">August 11th, 2018 |</span> Night 5 is released guys!!</li>
+                    <li><span class="highlight_red">August 10th, 2018 |</span> All basic webpages are updated to new UI ~</li>
+                    <li><span class="highlight_red">August 8th, 2018 |</span> More pages on this site are being updated with mobile compatibilities.</li>
+                    <li><span class="highlight_red">August 7th, 2018 |</span> Release of Night 5 is slated to be released on August 8th, 2018.</li>
+                    <li><span class="highlight_red">August 5th, 2018 |</span> Release of Night 5 is delayed due to some hardware errors that prevent me from coding</li>
+                    <li><span class="highlight_red">July 30th, 2018 |</span> As of this day, my blog shall put a pause on posting content due to the author is having an exam. <br>Sorry for the inconvenience ❤️<br> The blog shall continue after my final exam which is on 1st of August.</li>                        
+                    <li><span class="highlight_red">July 25th, 2018 |</span> Implementation of erno404 page and Night 4 post goes live</li>
+                </ul>
+        </div>
+        <div class="container">
+            <h3 style="border-bottom: solid cyan 1px; padding-bottom: 12pt;">Before you go on, why not save time and read the preface to see<br><span class="highlight_red">if my writing fits your style?</span></h3>
+            <ul>
+                <li>I have always been interested in technology ever since I was a kid. My childhood was filled with creativity and the freedom to explore the world around me. My childhood dream was to join the ranks of those who developed those incredible digital machineries. My primary years unfolded after my eyes as a disastrous period. The schooling system tried to mold myself into the image of an obedient pupil who obeys. During one encounter in 3rd grade, I just stopped trying to innovate.</li>
+                <li>My secondary years were not as bad, as I found new friends who had kindled the creative minds like I did. We formed a hanging out group. We won some competitions. Some animosities were directed towards me, for no reasons. My group stayed on my side and helped me through the ordeal. We went our separate ways after going to high school.</li>
+                <li>In high school, I made some new ones and formed a lasting relationship, including one of childhood friends. We still keep in touch till today. I began to gravitate towards politics and diplomacy because I joined a volunteering organization and my scores on science-y subjects didn’t convince me to chase after my dream while my friends started gravitating towards computer science and engineering.</li>
+                <li>(Current) Cegep – A post-secondary institution in Quebec. I studied Psychology and Political Science. Got tired of the stupid number of essays and stupid number of extra courses that I had to take and also of the ridiculous office politics in the organization that resulted in me being booted. I changed my program to Pure/Applied Science. I am now facing my old enemies: Bio and Chem. Still, the program haunts me. I have to re-learn everything in high school. Bored. I started programming and coding. I feel good. I continue to do so, developing my own blog and learning programming. Can’t wait to get to university. As for my group, most of them are in ComSci, others are in other engineering fields and we still communicate.</li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="posts/landing.html" class="btn-primary" style="padding: 12pt; background: rgb(255, 42, 53)">START HERE</a>
+                </div>
+                <div class="col-md-4">
+                    <a href="posts/landing.html" class="btn-primary" style="padding: 12pt; background: rgb(0, 146, 78)">START HERE</a>
+                </div>
+                <div class="col-md-4">
+                    <a href="posts/landing.html" class="btn-primary" style="padding: 12pt; background: rgb(0, 129, 146)">START HERE</a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- Bootstrap Scripts-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+    <!--FOOTER-->
+    <footer>
+    <div class="container" id="footer">
+        <p>Hoang Anh Ramen Site. All contents are copyrighted by Hoang Anh N. &copy; 2018</p>
+        <p>Contents from third-parties are explicitly stated</p>
+    </footer>
+</html>
