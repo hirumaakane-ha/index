@@ -3,8 +3,9 @@
 /* BODY */
 
 body {
-    color: rgb(209, 209, 209);
+    color: rgb(112, 111, 111);
     background: rgb(32, 32, 32);
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 /* CONTAINER */
@@ -12,8 +13,8 @@ body {
 .container {
     margin-top: 1%;
     padding: 3%;
-    background: rgb(4, 7, 12);
-    color: white;
+    background: rgb(41, 31, 49);
+    color: rgb(180, 180, 180);
 }
 
 .container-fluid {
@@ -179,7 +180,7 @@ li {
     font-size: 19pt;
     margin-top: 10pt;
     line-height: 25pt;
-    color: rgb(175, 169, 155);
+    color: rgb(143, 143, 143);
     font-weight: 300;
 }
 
