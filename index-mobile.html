@@ -55,6 +55,24 @@
                 if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
                 return i;
             }
+
+            function detectDevice() {
+                if ((window.innerWidth >= 750 || window.visualViewport.width >= 750)) {
+                    console.log(window.innerWidth);
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            }
+            function Redirect() {
+               window.location="index.html";
+            }
+
+            var device_query = detectDevice();
+            if (device_query == true) {
+                Redirect();
+            }
         </script>
     </head>
     <body onload="startTime()" onload="detectDevice()">
