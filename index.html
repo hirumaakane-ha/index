@@ -22,7 +22,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/bootstrapCustom.css">
         <link rel="icon" type="image/ico" href="https://s3.ca-central-1.amazonaws.com/hirumaakane.cdn/hoanganhramen.img/webicon.ico">
-        <script src="../css/scripts.js"></script>
+        <script src="js/script.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!--GOOGLE FONT IMPORT-->
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -45,13 +45,15 @@
                 h + " : " + m + " : " + s;
                 var t = setTimeout(startTime, 500);
             }
+
             function checkTime(i) {
                 if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
                 return i;
             }
 
             function detectDevice() {
-                if (window.innderWidth <= 400 || window.innerHeight <= 400) {
+                if ((window.innerWidth <= 750 || window.visualViewport.width <= 750)) {
+                    console.log(window.innerWidth);
                     return true;
                 }
                 else {
