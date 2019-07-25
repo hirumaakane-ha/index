@@ -17,14 +17,18 @@
     <title>Title Here</title>
     <script>
         // Welcome message:
-        alert("Welcome to the test site");
-        var pass = prompt("Please enter password (it's --> hoanganhramen <--)", "...");
-        document.getElementById("password") = pass;
-        if (document.getElementById("password").value == "hoanganhramen") {
-            
-        }
-        else {
-            windows.location = test.html;
+        var passcheck = false;
+        while (passcheck == false)
+        {
+            alert("Welcome to the test site");
+            var pass = prompt("Please enter password (it's --> hoanganhramen <--)", "...");
+            // document.getElementById("password") = pass;
+            if (pass != "hoanganhramen") {
+                window.location = "test.html";
+            }
+            else {
+                passcheck = true;
+            }
         }
     </script>
 </head>
@@ -33,6 +37,7 @@
     <div class="container-fluid" id="header">
         <h1 id="heading">Hoang Anh Ramen Ltd.</h1>
         <p>Test site</p>
+        <a href="index.html">Return to parent website</a>
         <p id="info"></p>
     </div>
     <div class="container-fluid">
@@ -41,7 +46,7 @@
             <input id="userinput" onkeypress="reappear()" onkeyup="reappear()" type="text">
         </form>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid" id="reappear_here">
         <h1 id="reappear"></h1>
     </div>
 </body>

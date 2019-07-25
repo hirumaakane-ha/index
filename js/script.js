@@ -109,6 +109,8 @@ console.log(apple.describe()); console.log(melon.describe()); */
 // document.getElementById("info").innerHTML = users[0].describe();
 // console.log(users[0].describe());
 
+var counter = -.5;
+
 function showDate(){
     var time = document.getElementById('time');
     time.innerHTML = Date();
@@ -123,6 +125,12 @@ function reappear(){
     var reappear = document.getElementById('reappear');
     var input = document.getElementById('userinput');
     reappear.innerHTML = input.value;
-    console.log(document.getElementById('userinput').value);
+   /*  console.log("counter = ", counter);
+    counter+=0.5;
+    if (counter >= 10) {
+        reappear.innerHTML = input.value + "<br>";
+        counter = 0;
+    }
+    */
 }
 
